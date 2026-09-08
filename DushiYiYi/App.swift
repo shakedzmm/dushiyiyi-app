@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import WebKit
 
 /* 自定义 scheme 处理器：把打包进 App 的 www 目录以 app://www/ 的正规源提供。
@@ -62,7 +63,6 @@ struct DushiYiYiApp: App {
         WindowGroup {
             GameView()
                 .ignoresSafeArea()
-                .persistentSystemOverlays(.hidden)
         }
     }
 }
