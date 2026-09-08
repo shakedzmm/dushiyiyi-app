@@ -105,6 +105,14 @@ jobs:
           files: DushiYiYi.ipa
           fail_on_unmatched_files: true
 
+      - name: Report build errors
+        if: failure()
+        run: |
+          git config user.email bot@local && git config user.name bot
+          { grep -n "error:" build.log | head -40; echo ---TAIL---; tail -50 build.log; } > build-errors.txt || true
+          git add build-errors.txt && git commit -m "build errors" >/dev/null 2>&1 || true
+          git push origin HEAD:main 2>&1 | tail -2 || true
+
       - name: Upload build log on failure
         if: failure()
         uses: actions/upload-artifact@v4
