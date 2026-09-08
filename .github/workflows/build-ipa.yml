@@ -30,11 +30,29 @@ jobs:
         run: brew install xcodegen
 
       - name: Unpack game www
+        id: unpack
         run: |
+          set +e
           cat www.part-*.part > www.zip
-          unzip -q www.zip -d DushiYiYi/Resources
-          echo "www files: $(find DushiYiYi/Resources/www -type f | wc -l)"
+          ls -la www.zip | tee diag.txt
+          (md5 -q www.zip 2>/dev/null || md5sum www.zip) >> diag.txt
+          /usr/bin/unzip -t www.zip >> diag.txt 2>&1
+          echo "unzip -t exit: $?" >> diag.txt
+          python3 -c "import zipfile;z=zipfile.ZipFile('www.zip');print('py testzip:',z.testzip());print('entries:',len(z.namelist()))" >> diag.txt 2>&1
+          python3 -c "import zipfile;z=zipfile.ZipFile('www.zip');z.extractall('DushiYiYi/Resources')" >> diag.txt 2>&1
+          echo "py extract exit: $?" >> diag.txt
+          ls DushiYiYi/Resources/www | head -5 >> diag.txt 2>&1
+          cat diag.txt
           test -f DushiYiYi/Resources/www/game.html
+
+      - name: Push diagnostics
+        if: always()
+        run: |
+          if [ -f diag.txt ]; then
+            git config user.email bot@local && git config user.name bot
+            git add diag.txt && git commit -m "diag" >/dev/null 2>&1 || true
+            git push origin HEAD:main 2>&1 | tail -2 || true
+          fi
 
       - name: Generate project
         run: xcodegen generate
