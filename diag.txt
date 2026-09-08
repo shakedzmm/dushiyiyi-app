@@ -1,0 +1,75 @@
+-rw-r--r--  1 runner  staff  60292679 Sep  8 01:19 www.zip
+977569a37e989daa5b47bc3c5f500653
+Archive:  www.zip
+    testing: www/game.html            OK
+    testing: www/assets/default_bg.png   OK
+    testing: www/assets/µùÑş¦+Õè¿µ+½ÚúÄµá+ŞâîµÖ»µÅÆşö+_şÄ¦õ+úõ©¡Õø¢ŞÇüÕ?ÄÕî¦ŞíùÚüô_Ú+äµÿÅµÜûŞë¦Ş¦â_şï¡ş¬äŞíù_2026-09-06T02-39-22.png   OK
+    testing: www/assets/characters/agent.png   OK
+    testing: www/assets/characters/chen.png   OK
+    testing: www/assets/characters/cook.png   OK
+    testing: www/assets/characters/ferryman.png   OK
+    testing: www/assets/characters/fishwife.png   OK
+    testing: www/assets/characters/hunter.png   OK
+    testing: www/assets/characters/nurse.png   OK
+    testing: www/assets/characters/plantdoc.png   OK
+    testing: www/assets/characters/qian.png   OK
+    testing: www/assets/characters/stallboss.png   OK
+    testing: www/assets/characters/teacher.png   OK
+    testing: www/assets/characters/teagirl.png   OK
+    testing: www/assets/characters/teaold.png   OK
+    testing: www/assets/characters/worker2.png   OK
+    testing: www/assets/characters/zhao.png   OK
+    testing: www/assets/characters/zhou.png   OK
+    testing: www/assets/characters/_test_cutout.png   OK
+    testing: www/assets/characters/common/actor.svg   OK
+    testing: www/assets/maps/city_haigang.png   OK
+    testing: www/assets/maps/city_jiangbei.png   OK
+    testing: www/assets/maps/city_linan.png   OK
+    testing: www/assets/maps/city_linjiang.png   OK
+    testing: www/assets/maps/city_shaxi.png   OK
+    testing: www/assets/maps/city_yunxi.png   OK
+    testing: www/assets/scenes/bg_barber.png   OK
+    testing: www/assets/scenes/bg_bathhouse.png   OK
+    testing: www/assets/scenes/bg_canteen.png   OK
+    testing: www/assets/scenes/bg_clinic.png   OK
+    testing: www/assets/scenes/bg_clinic2.png   OK
+    testing: www/assets/scenes/bg_creekside.png   OK
+    testing: www/assets/scenes/bg_dock.png   OK
+    testing: www/assets/scenes/bg_dorm.png   OK
+    testing: www/assets/scenes/bg_factorymed.png   OK
+    testing: www/assets/scenes/bg_fairday.png   OK
+    testing: www/assets/scenes/bg_ferry.png   OK
+    testing: www/assets/scenes/bg_ferryhead.png   OK
+    testing: www/assets/scenes/bg_fishmkt.png   OK
+    testing: www/assets/scenes/bg_foodstall.png   OK
+    testing: www/assets/scenes/bg_gym.png   OK
+    testing: www/assets/scenes/bg_hospital2.png   OK
+    testing: www/assets/scenes/bg_jobmarket.png   OK
+    testing: www/assets/scenes/bg_mall.png   OK
+    testing: www/assets/scenes/bg_misthill.png   OK
+    testing: www/assets/scenes/bg_netbar.png   OK
+    testing: www/assets/scenes/bg_nightmkt.png   OK
+    testing: www/assets/scenes/bg_noodle.png   OK
+    testing: www/assets/scenes/bg_offices.png   OK
+    testing: www/assets/scenes/bg_oldstreet.png   OK
+    testing: www/assets/scenes/bg_outpatient.png   OK
+    testing: www/assets/scenes/bg_park.png   OK
+    testing: www/assets/scenes/bg_pharmacy.png   OK
+    testing: www/assets/scenes/bg_renttown.png   OK
+    testing: www/assets/scenes/bg_schoolgate.png   OK
+    testing: www/assets/scenes/bg_seanight.png   OK
+    testing: www/assets/scenes/bg_store.png   OK
+    testing: www/assets/scenes/bg_teafield.png   OK
+    testing: www/assets/scenes/bg_teahouse.png   OK
+    testing: www/assets/scenes/bg_townclinic.png   OK
+    testing: www/assets/scenes/bg_townsquare.png   OK
+    testing: www/assets/scenes/bg_waterfront.png   OK
+    testing: www/assets/scenes/bg_wetmarket.png   OK
+    testing: www/assets/scenes/default_bg.png   OK
+No errors detected in compressed data of www.zip.
+unzip -t exit: 0
+py testzip: None
+entries: 65
+py extract exit: 0
+assets
+game.html
