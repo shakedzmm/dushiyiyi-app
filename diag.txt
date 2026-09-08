@@ -1,15 +1,15 @@
--rw-r--r--  1 runner  staff  60292679 Sep  8 01:50 www.zip
-9605ee79585a62734d4ff46862011bf6
+-rw-r--r--  1 runner  staff  60293099 Sep  8 01:51 www.zip
+8c9c28d1d1efd6e8cc16e4b6e7b1e2cc
 Archive:  www.zip
     testing: www/game.html            OK
-file #2:  bad zipfile offset (local header sig):  63270
-file #3:  bad zipfile offset (local header sig):  2954271
-file #4:  bad zipfile offset (local header sig):  5845366
-file #5:  bad zipfile offset (local header sig):  6962446
-file #6:  bad zipfile offset (local header sig):  7899503
-file #7:  bad zipfile offset (local header sig):  8983494
-file #8:  bad zipfile offset (local header sig):  10667849
-file #9:  bad zipfile offset (local header sig):  12023751
+    testing: www/assets/default_bg.png   OK
+    testing: www/assets/µùÑþ¦+Õè¿µ+½ÚúÄµá+ÞâîµÖ»µÅÆþö+_þÄ¦õ+úõ©¡Õø¢ÞÇüÕ?ÄÕî¦ÞíùÚüô_Ú+äµÿÅµÜûÞë¦Þ¦â_þï¡þ¬äÞíù_2026-09-06T02-39-22.png   OK
+    testing: www/assets/characters/agent.png   OK
+    testing: www/assets/characters/chen.png   OK
+    testing: www/assets/characters/cook.png   OK
+    testing: www/assets/characters/ferryman.png   OK
+    testing: www/assets/characters/fishwife.png   OK
+    testing: www/assets/characters/hunter.png   OK
     testing: www/assets/characters/nurse.png   OK
     testing: www/assets/characters/plantdoc.png   OK
     testing: www/assets/characters/qian.png   OK
@@ -66,30 +66,10 @@ file #9:  bad zipfile offset (local header sig):  12023751
     testing: www/assets/scenes/bg_waterfront.png   OK
     testing: www/assets/scenes/bg_wetmarket.png   OK
     testing: www/assets/scenes/default_bg.png   OK
-At least one error was detected in www.zip.
-unzip -t exit: 2
-py testzip: www/game.html
+No errors detected in compressed data of www.zip.
+unzip -t exit: 0
+py testzip: None
 entries: 65
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-    import zipfile;z=zipfile.ZipFile('www.zip');z.extractall('DushiYiYi/Resources')
-                                                ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1876, in extractall
-    self._extract_member(zipinfo, path, pwd)
-    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1948, in _extract_member
-    shutil.copyfileobj(source, target)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 256, in copyfileobj
-    while buf := fsrc_read(length):
-                 ~~~~~~~~~^^^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1105, in read
-    data = self._read1(n)
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1195, in _read1
-    self._update_crc(data)
-    ~~~~~~~~~~~~~~~~^^^^^^
-  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1123, in _update_crc
-    raise BadZipFile("Bad CRC-32 for file %r" % self.name)
-zipfile.BadZipFile: Bad CRC-32 for file 'www/game.html'
-py extract exit: 1
+py extract exit: 0
+assets
 game.html
